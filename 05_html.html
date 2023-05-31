@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nasty guy</title>
+    <style>
+        form{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
+        input{
+            width: 400px;
+            margin-bottom: 10px;
+        }
+        .drugs{
+            width: 100px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <h2>this is form tutorial</h2>
+    <form action=" backend.js">
+        <label for="name">Name</label>
+        <input type="text" name="myName" placeholder="enter your text hear" id="name">
+        Rollno: <input type="text" name="myRoll" placeholder="enter your roll number">
+        Date:<input type="date" name="hello" value="">
+        Number: <input type="number">
+        <label for="pants">Are you eligibel?</label>
+        <input type="checkbox" name="bonus" id="pants">
+        gender:
+        <br>
+        Mail:<input type="radio" name="mygender">
+        Femail: <input type="radio" name="mygender">
+        Write someting about us:
+        <textarea name="myText" id="sonatra" cols="30" rows="10" placeholder="write something"></textarea>
+        <label for="car">Van</label>
+        <select name="myCar" id="car">
+            <option value="Indica">Indica</option>
+            <option value="Toyota">Toyota</option>
+            <option value="semiNamo">Nano</option>
+            <option value="Bugati">Bugati</option>
+        </select>
+        <input type="submit" value="submit now" class="drugs">
+        <input type="reset" value="reset now" class="drugs">
+    </form>
+</body>
+</html>

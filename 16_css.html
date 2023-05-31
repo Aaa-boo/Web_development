@@ -1,0 +1,156 @@
+<!-- practice shit and this is how to use flex box -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web development</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-image: url("/images/1219390.jpg" );
+            background-repeat: no-repeat;
+            height: 100000px;
+        }
+        .container{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            /* width: 100px;
+            background-color: rgb(94, 93, 93); */
+            position: sticky;
+            top: 1px;
+        }
+        .container .logo img{
+            width: 100px;
+            height: 100px;
+
+        }
+        .container .navbar ul{
+            display: flex;
+            list-style: none;
+
+        }
+        .container .navbar ul li {
+            margin: 10px;
+            padding: 10px;
+
+        }
+        .container .navbar ul li a{
+            text-decoration: none;
+            font-size: larger;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: rgb(23, 212, 233);
+        }
+        .container .navbar ul li a:hover{
+            border: 2px solid black;
+            border-radius: 12px;
+            padding: 10px;
+            color: black;
+            background-color: white;
+
+        }
+        .container .search input{
+            margin: 13px -203px 0px 10px;
+            border: 2px solid black;
+            height: 30px;
+            border-radius: 12px;
+            font-size: larger;
+            display: flex;
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .body{
+            display: flex;
+            flex-wrap: wrap;
+            
+            justify-content: space-around;
+            margin: 119px 0px 0px 0px;
+        }
+        .body .box{
+
+            width: 400px;
+            height: 400px;
+            border: 2px solid black;
+            margin: 10px;
+        }
+        .box .img img{
+            width: 400px;
+            height: 400px;
+        }
+        .box .text{
+            position: absolute;
+            bottom: 86px;
+            color: white;
+            width: 400px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="/images/114-1144541_fortnite-logo-png-transparent-gaming-logo-png-png.png" alt="this is shit">
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a href="/html/01_css.html" target="_blank">Home</a></li>
+                <li><a href="/html/01_first.html" target="_blank">Services</a></li>
+                <li><a href="/html/02_html.html" target="_blank">Blog</a></li>
+                <li><a href="/html/04_css.html" target="_blank">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="search">
+            <form action="pluto.php">
+            <input type="text" placeholder="Search Hear">
+            </form>
+        </div>
+    </div>
+    <div class="body">
+        <div class="box" id="box1">
+            <div class="img">
+                <img src="/images/RDR2_HeroSquare_1080x1080.jpg" alt="">
+            </div>
+            <div class="text">
+                <h3>Read Dead Redemption 2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis corrupti minus doloribus harum excepturi laudantium soluta aliquid ut voluptatibus iste sequi est eius earum quia quas nostrum nihil aspernatur repellat aut deserunt, corporis veritatis. Laudantium eos illo explicabo, voluptatem doloremque obcaecati iste hic ab?</p>
+            </div>
+        </div>
+        <div class="box" id="box2">
+            <div class="img">
+                <img src="/images/d5q0s5j-02504238-91ad-4ca4-966c-d325d698da57.png" alt="">
+                <div class="text">
+                    <h3>Call of dudi</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis corrupti minus doloribus harum excepturi
+                    laudantium soluta aliquid ut voluptatibus iste sequi est eius earum quiaquas nostrum nihil aspernatur repellat aut
+                    deserunt, corporis veritatis. Laudantium eos illo explicabo, voluptatem doloremque obcaecati iste hic ab?</p>
+                </div>
+            </div>
+        </div>
+        <div class="box" id="box3">
+            <div class="img">
+                <img src="/images/2330894-2322534-2227554-grand+theft+auto+v.jpg" alt="">
+            </div>
+            <div class="text">
+                <h3>GTA V</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis corrupti minus doloribus harum excepturi
+                laudantium soluta aliquid ut voluptatibus iste sequi est eius earum quia quasnostrum nihil aspernatur repellat aut
+                deserunt, corporis veritatis. Laudantium eos illo explicabo, voluptatemdoloremque obcaecati iste hic ab?</p>
+            </div>
+        </div>
+        <div class="box" id="box4">
+            <div class="img">
+                <img src="/images/boondocks.jpg" alt="">
+            </div>
+            <div class="text">
+                <h3>The Boondocks</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem cumque, reiciendis veritatis laudantium recusandae debitis molestiae? Aliquid fugit ea voluptas quaerat sed explicabo, quis mollitia recusandae quisquam expedita doloremque voluptatibus aliquam porro ullam excepturi, vel quo beatae a debitis repudiandae maiores doloribus quos delectus culpa.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

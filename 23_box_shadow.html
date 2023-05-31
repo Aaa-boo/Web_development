@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box shadow and text shadow</title>
+    <style>
+        .container{
+            display: flex;
+        
+        }
+        .card{
+            /* border: 2px solid green; */
+            margin: 10px;
+            padding: 10px;
+            background-color: bisque;
+            box-shadow: 10px 13px green;
+            box-shadow: -10px -13px green;
+            box-shadow: 7px 5px 10px green;
+            box-shadow: 7px 5px 10px 2px green;
+            
+        }
+        .card h2{
+            text-shadow: 1px 3px 7px white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+            <h2>card1</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas necessitatibus facilis in quod, eius rem itaque excepturi quibusdam asperiores est, et sequi non dolore dolorem! At doloremque sed veritatis tempore! Aperiam eos a nostrum obcaecati?</p>
+        </div>
+        <div class="card" id="card2">
+            <h2>card2</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas necessitatibus facilis in quod, eius rem itaque excepturi quibusdam asperiores est, et sequi non dolore dolorem! At doloremque sed veritatis tempore! Aperiam eos a nostrum obcaecati?</p>
+        </div>
+        <div class="card" id="card3">
+            <h2>card3</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas necessitatibus facilis in quod, eius rem itaque excepturi quibusdam asperiores est, et sequi non dolore dolorem! At doloremque sed veritatis tempore! Aperiam eos a nostrum obcaecati?</p>
+        </div>
+        <!-- <div class="card" id="card4">
+            <h2>card4</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas necessitatibus facilis in quod, eius rem itaque excepturi quibusdam asperiores est, et sequi non dolore dolorem! At doloremque sed veritatis tempore! Aperiam eos a nostrum obcaecati?</p>
+        </div> -->
+    </div>
+</body>
+</html>

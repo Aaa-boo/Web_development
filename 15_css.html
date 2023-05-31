@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex box tutorial</title>
+    <style>
+        .container{
+            /* to initilize flex proparty as flex box it makes it so that the boxes that are in column are in a row */
+            display: flex;
+            border: 2px solid black;
+            width: 1800px;
+            height: 1800px;
+            /* determines the boxes are in a row or in a column */
+            flex-direction: row;
+            flex-direction: column;
+            /* column reverse meanas the first bor goes at the bottom and others on the top */
+            flex-direction: column-reverse;
+            flex-direction: row;
+            /* helps in wraping the boxes and makes it so when the screen size is shortened it wraps around the screen */
+            /*( default value is no wrap)  */
+            /* flex-wrap: wrap; */
+            /* flex-wrap: wrap-reverse; */
+            /* flex-flow: row-reverse wrap; */
+
+
+            /* makes the boxes center in a horizontal direction  */
+            justify-content: center;
+            /* gives the space inbetween the boxes */
+            justify-content: space-between;
+            /* /* gives even space inbetween the boxes */
+            justify-content: space-evenly;
+            /* gives pace around the boxes so the space is provides the margin equally on the both sides*/
+            justify-content: space-around;
+            /* alignes the item at the center and vertically or in a row wise */
+            align-items: center;
+            /* takes teh boxes at the bottom of the screen */
+            align-items: flex-end;
+            /* takes the boxes at the top of the main container */
+            /* align-items: flex-start; */
+            /*  */
+            align-items: stretch; 
+
+        }
+        .items{
+            /* display: flex;
+            justify-content: center; */
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            padding: 10px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #item1{
+            background-color: aqua;
+            /* higher the order the later it shows up in the container  */
+            /* order: 2; */
+
+            /* flex-grow makes the box grow  */
+            /* negative numbers are invalid in flex grow  */
+            /* flex-grow: 3; */
+            
+        }
+        #item2{
+            background-color:black ;
+            color: white;
+            /* flex-shrink: 3; */
+            /* order: 3; */
+            /*when the flex direction : row; then flex-base: will control the width of the box*/
+            /* when flex flex direction: column; then the flex-base: will control the height of the box */
+            flex-basis: 320px;
+        }
+        #item3{
+            background-color: palevioletred;
+            flex:2 2 344px;
+            align-self: flex-end;
+            /* align-self: flex-start; */
+            /* align-self: center; */
+        }
+        #item4{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is flex box tutorial</h1>
+    <div class="container">
+        <div class="items" id="item1">1</div>
+        <div class="items" id="item2">2</div>
+        <div class="items" id="item3">3</div>
+        <div class="items" id="item4">4</div>
+    </div>
+</body>
+</html>

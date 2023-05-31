@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css Variables custom property</title>
+    <style>
+        /* main variable : workes for all */
+        :root{
+            --box-color:pink;
+            --another-color:cyan;
+            --shadow-color: red;
+            --maxw:233px;
+            --maxh:233px;
+        }
+        .container{
+            --another-color:cyan;
+            display: flex;
+            width: 700px;
+            margin: auto;
+            /* justify-content: center;
+            align-items: center; */
+            background-color: var("--another-color");
+        }
+        .box{
+            /* local variable: works for this box only  */
+            --box-color:pink;
+            --another-color:cyan;
+            --shadow-color: red;
+            height: var(--maxh);
+            width: var(--maxw);
+            border: 2px solid var(--another-color);
+            margin: 10px;
+            box-shadow: 3px 4px 2px var(--shadow-color);
+            background-color: var(--box-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

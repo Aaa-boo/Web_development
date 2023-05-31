@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on css selectors</title>
+    <style>
+        h1{
+            background-color: gold;
+            color: white;
+            font-family: cursive;
+            text-align: center;
+        }
+        div li p{
+            color: blue;
+        }
+        /* only applyes for direct child and it is just that */
+        div > p{
+            color: green;
+        }
+
+        /* applyes to those p whos's the previous shibling are div */
+        div + p{
+            color: purple;
+            background-color: pink;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>This is more on selector</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item">
+                    <p>this  is paragraph that is under the list</p>
+                </li>
+                <li class="item">
+                    <p>this is paragraph that is inside another list</p>
+                </li>
+                <li class="item">
+                    <p>this is paragraph that is inside another another list</p>
+                </li>
+                <li class="item">
+                    this will not gert affected
+                </li>
+            </ul>
+            <p>this is a paragraph</p>
+        </div>
+        <p>this is another paragraph</p>
+    </div>
+    <p>this is another another paragraph</p>
+</body>
+</html>

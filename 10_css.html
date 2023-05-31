@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation bar</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+       .navbar{
+        display: flex;
+        background-color: rgb(132, 129, 129);
+        border-radius: 10px;
+        justify-content: space-around;
+       }
+       ul{
+        display: flex;
+        text-decoration: none;
+        list-style: none;
+        justify-content: center;
+
+       }
+       li{
+        margin: 10px;
+        padding: 10px;
+        text-decoration: none;
+        background-color: black;
+        color: white;
+        border: 2px solid green;
+        border-radius: 13px;
+       }
+       .navbar li a{
+        color: white;
+        text-decoration: none;
+        font-size: large;
+        
+       }
+       ul :hover{
+        background-color: aqua;
+        color: black;
+
+       }
+       .navbar:hover{
+        color: black;
+       }
+       .search{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+        
+       }
+       #search{
+        border: 3px solid black;
+        border-radius: 10px;
+        margin: 10px;
+        height: 50px;
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="02_html.html">Home</a></li>
+                <li><a href="01_css.html"> Sevices</a></li>
+                <li><a href="03_html.html">About u</a></li>
+                <li><a href="04_html.html">Contact us</a></li>
+            </ul>
+                <div class="search">
+                   Search hear:<input type="text" name="search" id="search" placeholder="search hear" >
+                </div>
+        </nav>
+    </header>
+</body>
+</html>
